@@ -5,6 +5,11 @@
 	"main": "index.js",
 	"author": "WebDesign Master",
 	"license": "ISC",
+	"homepage": "https://sulleimenov.github.io/diploma",
+	"scripts": {
+		"deploy": "gh-pages -d dist",
+		"predeploy": "gulp build"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.13.14",
 		"@babel/preset-env": "^7.13.12",
@@ -32,6 +37,7 @@
 		"webpack-stream": "^6.1.2"
 	},
 	"dependencies": {
+		"gh-pages": "^3.2.3",
 		"jquery": "^3.6.0",
 		"swiper": "^6.5.7"
 	}
