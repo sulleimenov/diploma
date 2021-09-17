@@ -1,0 +1,48 @@
+.page
+	margin-bottom: 80px
+.page-header
+	font-size: 26px
+	margin-bottom: 30px
+.page-body
+	display: flex
+	@include media-breakpoint-down(md)
+		flex-wrap: wrap
+	&__content
+		width: 60%
+		@include media-breakpoint-down(md)
+			width: 100%
+			margin-bottom: 30px
+	&__logo
+		width: 40%
+		img
+			margin: 0 auto
+		@include media-breakpoint-down(md)
+			display: none
+
+.page-whyus-list
+	display: flex
+	justify-content: space-between
+	gap: 30px
+	margin-bottom: 80px
+	@include media-breakpoint-down(lg)
+		flex-wrap: wrap
+	&__item
+		flex: 1 0 160px
+		border-radius: 10px
+		+shadow
+		padding: 20px
+		@include media-breakpoint-down(xs)
+			flex: 1 0 100%
+	&__icon
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 50px
+		height: 50px
+		background-color: #E3F7FC
+		border-radius: 10px
+		margin-bottom: 20px
+	&__title
+		font-size: 12px
+		font-weight: 600
+		

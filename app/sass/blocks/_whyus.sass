@@ -1,0 +1,57 @@
+.why-us-wrapper
+	display: flex
+	justify-content: space-between
+	align-items: center
+	@include media-breakpoint-down(md)
+		flex-wrap: wrap
+
+.why-us
+	&__info
+		max-width: 400px
+		@include media-breakpoint-down(md)
+			max-width: none
+			margin-bottom: 20px
+	&__title
+		font-size: 24px
+		margin-bottom: 17px
+		@include media-breakpoint-down(xs)
+			font-size: 16px
+		span
+			font-weight: 600
+	&__subtitle
+		font-size: 16px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		gap: 30px
+		justify-content: flex-end
+		width: 50%
+		@include media-breakpoint-down(md)
+			justify-content: flex-start
+			gap: 15px
+			width: 100%
+		@include media-breakpoint-down(xs)
+			justify-content: space-between
+	&__list-icon
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 50px
+		height: 50px
+		border-radius: 10px
+		background-color: #E3F7FC
+		img
+			max-width: 20px
+	&__list-item
+		display: flex
+		align-content: space-between
+		flex-wrap: wrap
+		border-radius: 10px
+		flex: 0 1 160px
+		height: 160px
+		padding: 20px
+		font-size: 12px
+		font-weight: 600
+		+shadow
+		@include media-breakpoint-down(xs)
+			flex: 0 1 48%

@@ -1,0 +1,24 @@
+.breadcrumbs
+	display: flex
+	list-style-type: none
+	padding-left: 0
+	margin-bottom: 40px
+	@include media-breakpoint-down(md)
+		margin-top: 80px
+	&__item
+		margin-right: 20px
+		position: relative
+		&::before
+			content: '/'
+			position: absolute
+			right: -12px
+			color: #828282
+			font-size: 12px
+			bottom: 1px
+		&:last-child
+			margin-right: 0
+			&::before
+				content: ''
+	&>.active a
+		color: #828282
+

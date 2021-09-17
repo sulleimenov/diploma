@@ -1,0 +1,55 @@
+.swiper-thank
+	overflow: hidden
+	position: relative
+	padding-bottom: 50px
+	&__img
+		width: 160px
+		height: 205px
+		border-radius: 10px
+		background-color: $gray
+		margin: 0 auto
+		margin-bottom: 15px
+	&__text
+		width: 160px
+		font-size: 14px
+		text-align: center
+		margin: 0 auto
+
+.thank-pagination
+	&>.swiper-pagination-bullet
+		border-radius: 50px
+		width: 6px
+		height: 6px
+		transition: all .6s ease
+	&>.swiper-pagination-bullet-active
+		width: 20px
+		transition: all .6s ease
+
+.thank-navigation
+	.swiper-button-prev,
+	.swiper-button-next
+		top: auto
+		bottom: -4px
+		&::after
+			font-size: 13px
+			font-weight: 700
+	.swiper-button-prev
+		left: 490px
+		@include media-breakpoint-down(lg)
+			left: 400px
+		@include media-breakpoint-down(md)
+			left: 275px
+		@include media-breakpoint-down(sm)
+			left: 175px
+		@include media-breakpoint-down(xs)
+			left: 25%
+	.swiper-button-next
+		right: 490px
+		@include media-breakpoint-down(lg)
+			right: 400px
+		@include media-breakpoint-down(md)
+			right: 275px
+		@include media-breakpoint-down(sm)
+			right: 175px
+		@include media-breakpoint-down(xs)
+			right: 25%

@@ -1,0 +1,36 @@
+.bunner
+	background-color: $gray
+	border-radius: 10px
+	padding: 45px 20px
+	@include media-breakpoint-down(md)
+		
+	&__title
+		font-size: 18px
+		font-weight: 600
+		margin-bottom: 5px
+		text-align: center
+	&__subtitle
+		font-size: 14px
+		margin-bottom: 20px
+		text-align: center
+
+.form-bunner
+	display: flex
+	justify-content: center
+	@include media-breakpoint-down(md)
+		flex-wrap: wrap
+		max-width: 296px
+		margin: 0 auto
+	&__input
+		background-color: #fff
+		color: #454545
+		margin-right: 20px
+		margin-bottom: 15px
+		@include media-breakpoint-down(md)
+			width: 100%
+			margin-right: 0
+	&__button
+		background-color: $accent
+		color: #fff
+		@include media-breakpoint-down(xs)
+			
